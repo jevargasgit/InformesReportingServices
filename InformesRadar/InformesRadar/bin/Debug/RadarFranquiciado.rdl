@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Chart Name="Chart2">
+        <ChartCategoryHierarchy>
+          <ChartMembers>
+            <ChartMember>
+              <Group Name="Chart2_CategoryGroup">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!ResumCriterio.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!ResumCriterio.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <Label>=Fields!ResumCriterio.Value</Label>
+            </ChartMember>
+          </ChartMembers>
+        </ChartCategoryHierarchy>
+        <ChartSeriesHierarchy>
+          <ChartMembers>
+            <ChartMember>
+              <Label>Evaluacion Tiempo</Label>
+            </ChartMember>
+          </ChartMembers>
+        </ChartSeriesHierarchy>
+        <ChartData>
+          <ChartSeriesCollection>
+            <ChartSeries Name="Evaluacion_Tiempo">
+              <ChartDataPoints>
+                <ChartDataPoint>
+                  <ChartDataPointValues>
+                    <Y>=Sum(Fields!Evaluacion_Tiempo.Value)</Y>
+                  </ChartDataPointValues>
+                  <ChartDataLabel>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>0;(0)</Format>
+                    </Style>
+                    <UseValueAsLabel>true</UseValueAsLabel>
+                    <Visible>true</Visible>
+                  </ChartDataLabel>
+                  <Style>
+                    <Border>
+                      <Color>Red</Color>
+                      <Width>1.5pt</Width>
+                    </Border>
+                    <Color>#00ffffff</Color>
+                  </Style>
+                  <ChartMarker>
+                    <Type>Diamond</Type>
+                    <Size>7pt</Size>
+                    <Style>
+                      <Border>
+                        <Color>Black</Color>
+                      </Border>
+                      <Color>Black</Color>
+                    </Style>
+                  </ChartMarker>
+                  <DataElementOutput>Output</DataElementOutput>
+                </ChartDataPoint>
+              </ChartDataPoints>
+              <Type>Polar</Type>
+              <Subtype>Radar</Subtype>
+              <Style />
+              <ChartEmptyPoints>
+                <Style />
+                <ChartMarker>
+                  <Style />
+                </ChartMarker>
+                <ChartDataLabel>
+                  <Style />
+                </ChartDataLabel>
+              </ChartEmptyPoints>
+              <ValueAxisName>Primary</ValueAxisName>
+              <CategoryAxisName>Primary</CategoryAxisName>
+              <ChartSmartLabel>
+                <CalloutLineColor>Black</CalloutLineColor>
+                <MinMovingDistance>0pt</MinMovingDistance>
+              </ChartSmartLabel>
+            </ChartSeries>
+          </ChartSeriesCollection>
+        </ChartData>
+        <ChartAreas>
+          <ChartArea Name="Default">
+            <ChartCategoryAxes>
+              <ChartAxis Name="Primary">
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <ChartMajorGridLines>
+                  <Enabled>False</Enabled>
+                  <Style>
+                    <Border>
+                      <Color>Gainsboro</Color>
+                    </Border>
+                  </Style>
+                </ChartMajorGridLines>
+                <ChartMinorGridLines>
+                  <Style>
+                    <Border>
+                      <Color>Gainsboro</Color>
+                      <Style>Dotted</Style>
+                    </Border>
+                  </Style>
+                </ChartMinorGridLines>
+                <ChartMinorTickMarks>
+                  <Length>0.5</Length>
+                </ChartMinorTickMarks>
+                <CrossAt>NaN</CrossAt>
+                <Minimum>NaN</Minimum>
+                <Maximum>NaN</Maximum>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+              <ChartAxis Name="Secondary">
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption>Axis Title</Caption>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <ChartMajorGridLines>
+                  <Enabled>False</Enabled>
+                  <Style>
+                    <Border>
+                      <Color>Gainsboro</Color>
+                    </Border>
+                  </Style>
+                </ChartMajorGridLines>
+                <ChartMinorGridLines>
+                  <Style>
+                    <Border>
+                      <Color>Gainsboro</Color>
+                      <Style>Dotted</Style>
+                    </Border>
+                  </Style>
+                </ChartMinorGridLines>
+                <ChartMinorTickMarks>
+                  <Length>0.5</Length>
+                </ChartMinorTickMarks>
+                <CrossAt>NaN</CrossAt>
+                <Location>Opposite</Location>
+                <Minimum>NaN</Minimum>
+                <Maximum>NaN</Maximum>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+            </ChartCategoryAxes>
+            <ChartValueAxes>
+              <ChartAxis Name="Primary">
+                <Style>
+                  <Border>
+                    <Color>Gray</Color>
+                  </Border>
+                  <FontSize>7pt</FontSize>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <Interval>10</Interval>
+                <IntervalType>Default</IntervalType>
+                <ChartMajorGridLines>
+                  <Style>
+                    <Border>
+                      <Color>Gray</Color>
+                    </Border>
+                  </Style>
+                </ChartMajorGridLines>
+                <ChartMinorGridLines>
+                  <Enabled>False</Enabled>
+                  <Style>
+                    <Border>
+                      <Color>Gainsboro</Color>
+                      <Style>Dotted</Style>
+                    </Border>
+                  </Style>
+                </ChartMinorGridLines>
+                <ChartMinorTickMarks>
+                  <Length>0.5</Length>
+                </ChartMinorTickMarks>
+                <CrossAt>NaN</CrossAt>
+                <Minimum>NaN</Minimum>
+                <Maximum>100</Maximum>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+              <ChartAxis Name="Secondary">
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption>Axis Title</Caption>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <ChartMajorGridLines>
+                  <Style>
+                    <Border>
+                      <Color>Gainsboro</Color>
+                    </Border>
+                  </Style>
+                </ChartMajorGridLines>
+                <ChartMinorGridLines>
+                  <Style>
+                    <Border>
+                      <Color>Gainsboro</Color>
+                      <Style>Dotted</Style>
+                    </Border>
+                  </Style>
+                </ChartMinorGridLines>
+                <ChartMinorTickMarks>
+                  <Length>0.5</Length>
+                </ChartMinorTickMarks>
+                <CrossAt>NaN</CrossAt>
+                <Location>Opposite</Location>
+                <Minimum>NaN</Minimum>
+                <Maximum>NaN</Maximum>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+            </ChartValueAxes>
+            <Style>
+              <BackgroundColor>#fdffda</BackgroundColor>
+              <BackgroundGradientType>None</BackgroundGradientType>
+            </Style>
+          </ChartArea>
+        </ChartAreas>
+        <Palette>BrightPastel</Palette>
+        <ChartBorderSkin>
+          <Style>
+            <BackgroundColor>Gray</BackgroundColor>
+            <BackgroundGradientType>None</BackgroundGradientType>
+            <Color>White</Color>
+          </Style>
+        </ChartBorderSkin>
+        <ChartNoDataMessage Name="NoDataMessage">
+          <Caption>No Data Available</Caption>
+          <Style>
+            <BackgroundGradientType>None</BackgroundGradientType>
+            <TextAlign>General</TextAlign>
+            <VerticalAlign>Top</VerticalAlign>
+          </Style>
+        </ChartNoDataMessage>
+        <DataSetName>DSet_Radar</DataSetName>
+        <Top>0.4795cm</Top>
+        <Left>0.3175cm</Left>
+        <Height>12.37116cm</Height>
+        <Width>19.11583cm</Width>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>#fdffda</BackgroundColor>
+          <BackgroundGradientType>None</BackgroundGradientType>
+        </Style>
+      </Chart>
+      <Tablix Name="Tablix2">
+        <TablixCorner>
+          <TablixCornerRows>
+            <TablixCornerRow>
+              <TablixCornerCell>
+                <CellContents>
+                  <Textbox Name="Textbox11">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Categoria</Value>
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox11</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>#b0ad9b</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
+              <TablixCornerCell>
+                <CellContents>
+                  <Textbox Name="Textbox12">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Sub Criterio</Value>
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox12</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>#b0ad9b</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
+            </TablixCornerRow>
+          </TablixCornerRows>
+        </TablixCorner>
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Evaluacion_Tiempo">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!Evaluacion_Tiempo.Value)</Value>
+                              <Style>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <Format>f0</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Evaluacion_Tiempo</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Pesos_Tiempo">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!Pesos_Tiempo.Value)</Value>
+                              <Style>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <Format>f2</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Pesos_Tiempo</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox29">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox29</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox30">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!Pesos_Tiempo.Value)</Value>
+                              <Style>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>f2</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox30</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="ColumnGroup">
+                <GroupExpressions>
+                  <GroupExpression />
+                </GroupExpressions>
+              </Group>
+              <TablixHeader>
+                <Size>0.6cm</Size>
+                <CellContents>
+                  <Textbox Name="Textbox9">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>% Evaluacion / Pesos</Value>
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox9</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>#b0ad9b</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Categoria">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Categoria.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!Categoria.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixHeader>
+                <Size>5.421cm</Size>
+                <CellContents>
+                  <Textbox Name="Categoria">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Fields!Categoria.Value</Value>
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Categoria</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Sub_Criterio">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Sub_Criterio.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Sub_Criterio.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>6.6275cm</Size>
+                    <CellContents>
+                      <Textbox Name="Sub_Criterio">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!Sub_Criterio.Value</Value>
+                                <Style>
+                                  <FontFamily>Calibri</FontFamily>
+                                  <FontSize>9pt</FontSize>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Sub_Criterio</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+            <TablixMember>
+              <TablixHeader>
+                <Size>5.421cm</Size>
+                <CellContents>
+                  <Textbox Name="Textbox27">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Totales</Value>
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox27</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>6.6275cm</Size>
+                    <CellContents>
+                      <Textbox Name="Textbox28">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style>
+                                  <FontFamily>Calibri</FontFamily>
+                                  <FontSize>9pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox28</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+              <KeepWithGroup>Before</KeepWithGroup>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DSet_Radar</DataSetName>
+        <Top>13.53933cm</Top>
+        <Left>0.36737cm</Left>
+        <Height>1.8cm</Height>
+        <Width>17.0485cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>6.03911in</Height>
+    <Style />
+  </Body>
+  <Width>8.20092in</Width>
+  <Page>
+    <PageHeader>
+      <Height>2.1367cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>GRÁFICO RADAR FRANQUICIADO</Value>
+                  <Style>
+                    <FontFamily>Calibri</FontFamily>
+                    <FontSize>16pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.3175cm</Top>
+          <Left>3.84387cm</Left>
+          <Height>0.78033cm</Height>
+          <Width>13.1045cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Image Name="Image1">
+          <Source>Embedded</Source>
+          <Value>logodisensa</Value>
+          <Sizing>Fit</Sizing>
+          <Top>0.27687cm</Top>
+          <Left>0.28787cm</Left>
+          <Height>1.59736cm</Height>
+          <Width>3.37961cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="ExecutionTime">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!ExecutionTime</Value>
+                  <Style>
+                    <FontFamily>Calibri</FontFamily>
+                    <FontSize>7pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>ExecutionTime</rd:DefaultName>
+          <Top>0.4572cm</Top>
+          <Left>17.3482cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.85983cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Nombre_Franquiciado">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!Nombre_Franquiciado.Value, "DSet_Radar")</Value>
+                  <Style>
+                    <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Nombre_Franquiciado</rd:DefaultName>
+          <Top>1.27422cm</Top>
+          <Left>3.84387cm</Left>
+          <Height>0.6cm</Height>
+          <Width>13.1045cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DS_Cubo">
+      <DataSourceReference>DS_Cubo</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>8b8ea590-b211-48c3-ac46-3bdd05c3410a</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DSet_Radar">
+      <Query>
+        <DataSourceName>DS_Cubo</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="TiempoRadarMes">
+            <Value>=Parameters!TiempoRadarMes.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="FranquiciadoNombreFranquiciado">
+            <Value>=Parameters!FranquiciadoNombreFranquiciado.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText> SELECT NON EMPTY { [Measures].[Evaluacion Tiempo], [Measures].[Pesos Tiempo] } ON COLUMNS, NON EMPTY { ([Franquiciado].[Código Solicitante].[Código Solicitante].ALLMEMBERS * [Franquiciado].[Nombre Franquiciado].[Nombre Franquiciado].ALLMEMBERS * [Criterio].[Categoria].[Categoria].ALLMEMBERS * [Criterio].[Sub-Criterio].[Sub-Criterio].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@FranquiciadoNombreFranquiciado, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TiempoRadarMes, CONSTRAINED) ) ON COLUMNS FROM [Cubo Radar])) WHERE ( IIF( STRTOSET(@TiempoRadarMes, CONSTRAINED).Count = 1, STRTOSET(@TiempoRadarMes, CONSTRAINED), [Tiempo Radar].[Mes].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Franquiciado</DimensionName>
+                      <HierarchyName>Código Solicitante</HierarchyName>
+                      <HierarchyUniqueName>[Franquiciado].[Código Solicitante]</HierarchyUniqueName>
+                      <LevelName>Código Solicitante</LevelName>
+                      <UniqueName>[Franquiciado].[Código Solicitante].[Código Solicitante]</UniqueName>
+                    </ID>
+                    <ItemCaption>Código Solicitante</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Franquiciado</DimensionName>
+                      <HierarchyName>Nombre Franquiciado</HierarchyName>
+                      <HierarchyUniqueName>[Franquiciado].[Nombre Franquiciado]</HierarchyUniqueName>
+                      <LevelName>Nombre Franquiciado</LevelName>
+                      <UniqueName>[Franquiciado].[Nombre Franquiciado].[Nombre Franquiciado]</UniqueName>
+                    </ID>
+                    <ItemCaption>Nombre Franquiciado</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Criterio</DimensionName>
+                      <HierarchyName>Categoria</HierarchyName>
+                      <HierarchyUniqueName>[Criterio].[Categoria]</HierarchyUniqueName>
+                      <LevelName>Categoria</LevelName>
+                      <UniqueName>[Criterio].[Categoria].[Categoria]</UniqueName>
+                    </ID>
+                    <ItemCaption>Categoria</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Criterio</DimensionName>
+                      <HierarchyName>Sub-Criterio</HierarchyName>
+                      <HierarchyUniqueName>[Criterio].[Sub-Criterio]</HierarchyUniqueName>
+                      <LevelName>Sub-Criterio</LevelName>
+                      <UniqueName>[Criterio].[Sub-Criterio].[Sub-Criterio]</UniqueName>
+                    </ID>
+                    <ItemCaption>Sub-Criterio</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Evaluacion Tiempo</MeasureName>
+                      <UniqueName>[Measures].[Evaluacion Tiempo]</UniqueName>
+                    </ID>
+                    <ItemCaption>Evaluacion Tiempo</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Pesos Tiempo</MeasureName>
+                      <UniqueName>[Measures].[Pesos Tiempo]</UniqueName>
+                    </ID>
+                    <ItemCaption>Pesos Tiempo</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                </Items>
+              </Select>
+              <From>Cubo Radar</From>
+              <Filter>
+                <FilterItems>
+                  <FilterItem>
+                    <HierarchyUniqueName>[Tiempo Radar].[Mes]</HierarchyUniqueName>
+                    <Condition xsi:type="EqualTo">
+                      <Members>
+                        <Member>
+                          <MemberUniqueName>[Tiempo Radar].[Mes].&amp;[2017-04-01T00:00:00]</MemberUniqueName>
+                        </Member>
+                      </Members>
+                      <Parametrized>true</Parametrized>
+                    </Condition>
+                  </FilterItem>
+                  <FilterItem>
+                    <HierarchyUniqueName>[Franquiciado].[Nombre Franquiciado]</HierarchyUniqueName>
+                    <Condition xsi:type="EqualTo">
+                      <Members>
+                        <Member>
+                          <MemberUniqueName>[Franquiciado].[Nombre Franquiciado].&amp;[384]</MemberUniqueName>
+                        </Member>
+                      </Members>
+                      <Parametrized>true</Parametrized>
+                    </Condition>
+                  </FilterItem>
+                </FilterItems>
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties />
+            </QuerySpecification>
+            <Query>
+              <Statement> SELECT NON EMPTY { [Measures].[Evaluacion Tiempo], [Measures].[Pesos Tiempo] } ON COLUMNS, NON EMPTY { ([Franquiciado].[Código Solicitante].[Código Solicitante].ALLMEMBERS * [Franquiciado].[Nombre Franquiciado].[Nombre Franquiciado].ALLMEMBERS * [Criterio].[Categoria].[Categoria].ALLMEMBERS * [Criterio].[Sub-Criterio].[Sub-Criterio].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@FranquiciadoNombreFranquiciado, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TiempoRadarMes, CONSTRAINED) ) ON COLUMNS FROM [Cubo Radar])) WHERE ( IIF( STRTOSET(@TiempoRadarMes, CONSTRAINED).Count = 1, STRTOSET(@TiempoRadarMes, CONSTRAINED), [Tiempo Radar].[Mes].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <ParameterDefinitions>
+                <ParameterDefinition>
+                  <Name>TiempoRadarMes</Name>
+                  <DefaultValues>
+                    <DefaultValue>[Tiempo Radar].[Mes].&amp;[2017-04-01T00:00:00]</DefaultValue>
+                  </DefaultValues>
+                  <Caption>Mes</Caption>
+                  <HierarchyUniqueName>[Tiempo Radar].[Mes]</HierarchyUniqueName>
+                  <ParameterValuesQuery>
+                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Tiempo Radar].[Mes].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Tiempo Radar].[Mes].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Tiempo Radar].[Mes].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Tiempo Radar].[Mes].ALLMEMBERS ON ROWS FROM [Cubo Radar]</Statement>
+                    <ParameterizedStatement>
+                      <ReferencedParameters />
+                    </ParameterizedStatement>
+                  </ParameterValuesQuery>
+                  <MultipleValues>true</MultipleValues>
+                </ParameterDefinition>
+                <ParameterDefinition>
+                  <Name>FranquiciadoNombreFranquiciado</Name>
+                  <DefaultValues>
+                    <DefaultValue>[Franquiciado].[Nombre Franquiciado].&amp;[384]</DefaultValue>
+                  </DefaultValues>
+                  <Caption>Nombre Franquiciado</Caption>
+                  <HierarchyUniqueName>[Franquiciado].[Nombre Franquiciado]</HierarchyUniqueName>
+                  <ParameterValuesQuery>
+                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Franquiciado].[Nombre Franquiciado].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@TiempoRadarMes, CONSTRAINED) ) ON COLUMNS FROM [Cubo Radar])</Statement>
+                    <ParameterizedStatement>
+                      <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Franquiciado].[Nombre Franquiciado].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@TiempoRadarMes, CONSTRAINED) ) ON COLUMNS FROM [Cubo Radar])</Statement>
+                      <ReferencedParameters>
+                        <ReferencedParameter>
+                          <Name>TiempoRadarMes</Name>
+                        </ReferencedParameter>
+                      </ReferencedParameters>
+                    </ParameterizedStatement>
+                  </ParameterValuesQuery>
+                  <MultipleValues>true</MultipleValues>
+                </ParameterDefinition>
+              </ParameterDefinitions>
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="Código_Solicitante">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Franquiciado].[Código Solicitante].[Código Solicitante]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nombre_Franquiciado">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Franquiciado].[Nombre Franquiciado].[Nombre Franquiciado]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Categoria">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Criterio].[Categoria].[Categoria]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sub_Criterio">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Criterio].[Sub-Criterio].[Sub-Criterio]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Evaluacion_Tiempo">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Evaluacion Tiempo]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LetraCriterio">
+          <Value>=Left(Fields!Sub_Criterio.Value,InStr(Fields!Sub_Criterio.Value,"."))</Value>
+        </Field>
+        <Field Name="Pesos_Tiempo">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Pesos Tiempo]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ResumCriterio">
+          <Value>=Left(Fields!Sub_Criterio.Value,20)</Value>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="TiempoRadarMes">
+      <Query>
+        <DataSourceName>DS_Cubo</DataSourceName>
+        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Tiempo Radar].[Mes].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Tiempo Radar].[Mes].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Tiempo Radar].[Mes].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Tiempo Radar].[Mes].ALLMEMBERS ON ROWS FROM [Cubo Radar]</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <Type>Query</Type>
+            <QuerySpecification xsi:type="MDXQuerySpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterCaption</MeasureName>
+                      <UniqueName>[Measures].[ParameterCaption]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterCaption</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterValue</MeasureName>
+                      <UniqueName>[Measures].[ParameterValue]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterValue</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterLevel</MeasureName>
+                      <UniqueName>[Measures].[ParameterLevel]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterLevel</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                </Items>
+              </Select>
+              <From>Cubo Radar</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties />
+            </QuerySpecification>
+            <Query>
+              <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Tiempo Radar].[Mes].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Tiempo Radar].[Mes].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Tiempo Radar].[Mes].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Tiempo Radar].[Mes].ALLMEMBERS ON ROWS FROM [Cubo Radar]</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <rd:AutoGenerated>true</rd:AutoGenerated>
+        <rd:Hidden>true</rd:Hidden>
+      </Query>
+      <Fields>
+        <Field Name="ParameterCaption">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterCaption]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterValue]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterLevel]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaptionIndented">
+          <Value>=Space(3*Fields!ParameterLevel.Value) + Fields!ParameterCaption.Value</Value>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FranquiciadoNombreFranquiciado">
+      <Query>
+        <DataSourceName>DS_Cubo</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="TiempoRadarMes">
+            <Value>=Parameters!TiempoRadarMes.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Franquiciado].[Nombre Franquiciado].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@TiempoRadarMes, CONSTRAINED) ) ON COLUMNS FROM [Cubo Radar])</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <Type>Query</Type>
+            <QuerySpecification xsi:type="MDXQuerySpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterCaption</MeasureName>
+                      <UniqueName>[Measures].[ParameterCaption]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterCaption</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterValue</MeasureName>
+                      <UniqueName>[Measures].[ParameterValue]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterValue</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterLevel</MeasureName>
+                      <UniqueName>[Measures].[ParameterLevel]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterLevel</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                </Items>
+              </Select>
+              <From>Cubo Radar</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties />
+            </QuerySpecification>
+            <Query>
+              <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Franquiciado].[Nombre Franquiciado].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Franquiciado].[Nombre Franquiciado].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@TiempoRadarMes, CONSTRAINED) ) ON COLUMNS FROM [Cubo Radar])</Statement>
+              <ParameterDefinitions>
+                <ParameterDefinition>
+                  <Name>TiempoRadarMes</Name>
+                  <DefaultValues>
+                    <DefaultValue>[Tiempo Radar].[Mes].&amp;[2017-04-01T00:00:00]</DefaultValue>
+                  </DefaultValues>
+                  <Caption>Mes</Caption>
+                  <HierarchyUniqueName>[Tiempo Radar].[Mes]</HierarchyUniqueName>
+                  <ParameterValuesQuery>
+                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Tiempo Radar].[Mes].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Tiempo Radar].[Mes].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Tiempo Radar].[Mes].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Tiempo Radar].[Mes].ALLMEMBERS ON ROWS FROM [Cubo Radar]</Statement>
+                    <ParameterizedStatement>
+                      <ReferencedParameters />
+                    </ParameterizedStatement>
+                  </ParameterValuesQuery>
+                  <MultipleValues>true</MultipleValues>
+                </ParameterDefinition>
+              </ParameterDefinitions>
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <rd:AutoGenerated>true</rd:AutoGenerated>
+        <rd:Hidden>true</rd:Hidden>
+      </Query>
+      <Fields>
+        <Field Name="ParameterCaption">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterCaption]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterValue]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterLevel]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaptionIndented">
+          <Value>=Space(3*Fields!ParameterLevel.Value) + Fields!ParameterCaption.Value</Value>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="TiempoRadarMes">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Tiempo Radar].[Mes].&amp;[2017-04-01T00:00:00]</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Mes</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>TiempoRadarMes</DataSetName>
+          <ValueField>ParameterValue</ValueField>
+          <LabelField>ParameterCaptionIndented</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="FranquiciadoNombreFranquiciado">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Franquiciado].[Nombre Franquiciado].&amp;[384]</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Nombre Franquiciado</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>FranquiciadoNombreFranquiciado</DataSetName>
+          <ValueField>ParameterValue</ValueField>
+          <LabelField>ParameterCaptionIndented</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logodisensa">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>8c8d4858-9c28-48d5-8ff0-d3a2fb90dddf</rd:ReportID>
+</Report>
