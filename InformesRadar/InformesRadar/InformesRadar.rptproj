@@ -21,6 +21,10 @@
       <Name>ResumenMesNacional.rdl</Name>
       <FullPath>ResumenMesNacional.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ResumenVisitasFranquicias.rdl</Name>
+      <FullPath>ResumenVisitasFranquicias.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
@@ -29,7 +33,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetServerURL>http://ecsedjevargan/ReportServer</TargetServerURL>
+        <TargetServerURL>http://10.106.3.54/ReportServer</TargetServerURL>
         <TargetFolder>InformesRadar</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <OverwriteDataSources>true</OverwriteDataSources>

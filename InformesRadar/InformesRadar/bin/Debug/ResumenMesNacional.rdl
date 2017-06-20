@@ -616,7 +616,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>4.58691cm</Width>
+                  <Width>3.72608cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.03795cm</Width>
@@ -628,13 +628,16 @@
                   <Width>2.01931cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.2434cm</Width>
+                  <Width>2.1881cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.83185cm</Width>
+                  <Width>1.95236cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.4129cm</Width>
+                  <Width>1.96414cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.46582cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.865cm</Width>
@@ -731,9 +734,10 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>5</ColSpan>
+                        <ColSpan>6</ColSpan>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell />
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
@@ -959,7 +963,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.93866cm</Height>
+                  <Height>1.20324cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1095,6 +1099,43 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Khaki</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox232">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>% Franquicias Visitadas Proyectado</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1642,6 +1683,44 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox221">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=((IIF(Fields!nu_asignados.Value=0,0,Fields!nu_evaluados.Value/Fields!nu_asignados.Value))/day(today))*30</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <Format>0%</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox221</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e1ffff</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <rd:Selected>true</rd:Selected>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="nu_visitas1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -1844,6 +1923,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>#fae7e9</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2231,6 +2311,44 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox87</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox223">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=((Sum(Fields!nu_evaluados.Value, "DSet_ResumSuperv")/Sum(Fields!nu_asignados.Value, "DSet_ResumSuperv"))/day(today))*30</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>0%</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox223</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2638,6 +2756,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
                 <TablixMember>
                   <Visibility>
                     <Hidden>true</Hidden>
@@ -2650,7 +2769,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.2799cm</Size>
+                    <Size>1.98886cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox247">
                         <CanGrow>true</CanGrow>
@@ -2689,7 +2808,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.2799cm</Size>
+                    <Size>1.98886cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox29">
                         <CanGrow>true</CanGrow>
@@ -2743,7 +2862,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>2.2799cm</Size>
+                    <Size>1.98886cm</Size>
                     <CellContents>
                       <Textbox Name="tx_zona11">
                         <CanGrow>true</CanGrow>
@@ -2789,7 +2908,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.2799cm</Size>
+                    <Size>1.98886cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox31">
                         <CanGrow>true</CanGrow>
@@ -2837,8 +2956,8 @@
             </PageBreak>
             <Top>4.9022cm</Top>
             <Left>0.73237cm</Left>
-            <Height>2.73866cm</Height>
-            <Width>28.39861cm</Width>
+            <Height>3.00324cm</Height>
+            <Width>29.32901cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2883,7 +3002,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>6.82266cm</Width>
+                  <Width>5.69725cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.05718cm</Width>
@@ -2893,6 +3012,9 @@
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.12871cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.14284cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.9436cm</Width>
@@ -2954,8 +3076,7 @@
                           <rd:DefaultName>Textbox233</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2999,9 +3120,10 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>5</ColSpan>
+                        <ColSpan>6</ColSpan>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell />
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
@@ -3227,7 +3349,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.9175cm</Height>
+                  <Height>1.20854cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3353,6 +3475,43 @@
                                   <Style>
                                     <FontFamily>Calibri</FontFamily>
                                     <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Khaki</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox230">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>% Franquicias Visitadas Proyectado</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -3908,6 +4067,43 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox211">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=((IIF(Fields!nu_asignados.Value=0,0,Fields!nu_evaluados.Value/Fields!nu_asignados.Value))/Day(Today))*30</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <Format>0%</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox211</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e1ffff</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="nu_visitas">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -4115,6 +4311,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>#fae7e9</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -4498,6 +4695,44 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox79</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox212">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=((Sum(Fields!nu_evaluados.Value)/Sum(Fields!nu_asignados.Value))/day(today))*30</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>0%</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox212</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -4905,6 +5140,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
                 <TablixMember>
                   <Visibility>
                     <Hidden>true</Hidden>
@@ -4933,8 +5169,8 @@
             <PageName>SupervisorZona</PageName>
             <Top>1.24037cm</Top>
             <Left>0.73237cm</Left>
-            <Height>2.7175cm</Height>
-            <Width>28.35437cm</Width>
+            <Height>3.00854cm</Height>
+            <Width>29.3718cm</Width>
             <ZIndex>2</ZIndex>
             <Visibility>
               <Hidden>=IIF(Parameters!I_pIdUsuario.Value=0,false,true)</Hidden>
@@ -5868,7 +6104,7 @@ REALIZADAS</Value>
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
-                            <Size>2.15776cm</Size>
+                            <Size>2.63401cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox42">
                                 <CanGrow>true</CanGrow>
@@ -5945,7 +6181,7 @@ REALIZADAS</Value>
                         </TablixMember>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.15776cm</Size>
+                            <Size>2.63401cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox43">
                                 <CanGrow>true</CanGrow>
@@ -6070,7 +6306,7 @@ REALIZADAS</Value>
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.15776cm</Size>
+                            <Size>2.63401cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox44">
                                 <CanGrow>true</CanGrow>
@@ -6236,7 +6472,7 @@ REALIZADAS</Value>
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.15776cm</Size>
+                            <Size>2.63401cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox48">
                                 <CanGrow>true</CanGrow>
@@ -6333,7 +6569,7 @@ REALIZADAS</Value>
             <Top>13.96153cm</Top>
             <Left>0.78528cm</Left>
             <Height>4.72917cm</Height>
-            <Width>15.22006cm</Width>
+            <Width>15.69631cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -7776,7 +8012,7 @@ REALIZADAS</Value>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox22</rd:DefaultName>
-            <Top>7.83582cm</Top>
+            <Top>8.47082cm</Top>
             <Left>0.73237cm</Left>
             <Height>0.6cm</Height>
             <Width>13.57016cm</Width>
@@ -15503,7 +15739,7 @@ REALIZADAS</Value>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <PageName>HistoricoVisitas</PageName>
-            <Top>8.61221cm</Top>
+            <Top>9.24721cm</Top>
             <Left>0.78528cm</Left>
             <Height>3.57883cm</Height>
             <Width>48.25868cm</Width>
@@ -17458,7 +17694,6 @@ REALIZADAS</Value>
                                   <PaddingBottom>2pt</PaddingBottom>
                                 </Style>
                               </Textbox>
-                              <rd:Selected>true</rd:Selected>
                             </CellContents>
                           </TablixHeader>
                           <TablixMembers>
@@ -18076,6 +18311,7 @@ REALIZADAS</Value>
     <ReportParameter Name="I_pIdUsuario">
       <DataType>String</DataType>
       <Prompt>IdUsuario</Prompt>
+      <Hidden>true</Hidden>
     </ReportParameter>
   </ReportParameters>
   <EmbeddedImages>
